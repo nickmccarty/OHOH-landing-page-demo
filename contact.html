@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OHOH - Home</title>
+  <link rel="stylesheet" href="./components/contact.css">
+  <link rel="stylesheet" href="./components/header.css">
+  <link rel="stylesheet" href="./components/footer.css">
+</head>
+<body>
+  <div class="header" include="./components/header.html"></div>
+  <main>
+    <section class="contact-form">
+      <h3>Contact Us</h3>
+      <p class="intro-text">
+          Thank you for helping make Portland the strongest, kindest and most supportive community we can be – for all citizens. 
+          If you are interested in an Educational Speaking Engagement or simply have a question, please submit the form below.
+      </p>
+
+      <div class="contact-info">
+          <h2 class="label">EMAIL:</h2>
+          <p class="email-address"><a href="mailto:office@oregonharborofhope.org">office@oregonharborofhope.org</a></p>
+      </div>
+
+      <h2 class="form-heading">SEND US A MESSAGE</h2>
+      <form class="message-form" action="#" method="post">
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="name">NAME:</label>
+                  <input type="text" id="name" name="name" required placeholder="Enter your first and last name">
+              </div>
+              <div class="form-group">
+                  <label for="email">EMAIL:</label>
+                  <input type="email" id="email" name="email" required placeholder="Enter your email">
+              </div>
+          </div>
+          <div class="form-group message-box">
+              <label for="message">MESSAGE:</label>
+              <textarea id="message" name="message" required placeholder="your message here..."></textarea>
+          </div>
+          <button type="submit" class="submit-button">Send</button>
+      </form>
+    </section>
+  </main>
+  <div class="footer" include="./components/footer.html"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.7.1/firebase-firestore-compat.js"></script>
+  <script src="./components/footer.js" type="module"></script>
+  <script src="./inject.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.8.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBCdjUlaEx34eL-gD4xOi4t5gygr1D7veg",
+      authDomain: "ohoh-contact-form.firebaseapp.com",
+      projectId: "ohoh-contact-form",
+      storageBucket: "ohoh-contact-form.firebasestorage.app",
+      messagingSenderId: "575108216619",
+      appId: "1:575108216619:web:0e92092cfd4f61c698776e",
+      measurementId: "G-YF0E5PMYVN"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <script src="./components/contact.js"></script>
+</body>
+</html>
