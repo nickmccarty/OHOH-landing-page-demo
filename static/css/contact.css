@@ -1,14 +1,3 @@
-:root {
-  --background-color: #1e3c54;
-  --secondary-background-color: #005F85;
-  --accent-color: #f9df00;
-  --text-color: #fff;
-  --donate-button-text-color: black;
-  --primary-font-family: 'Albert Sans', sans-serif;
-  --secondary-font-family: 'EB Garamond', serif;
-  --tertiary-font-family: 'Sen', sans-serif;
-}
-
 body {
     background-color: #d3d3d3;
     font-family: var(--secondary-font-family);
@@ -32,13 +21,6 @@ body {
   padding-top: 50px;
 }
 
-/* .contact-form h1 {
-    color: var(--secondary-background-color);
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-} */
-
 .contact-form p.intro-text {
     max-width: 750px;
     margin: 0 auto 2rem;
@@ -48,7 +30,6 @@ body {
 
 .contact-info .label {
     font-size: 14px;
-    /* font-weight: bold; */
     color: var(--secondary-background-color);
     font-family: var(--primary-font-family);
     letter-spacing: 1px;

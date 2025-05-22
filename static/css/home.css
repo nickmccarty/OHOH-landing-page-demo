@@ -1,17 +1,5 @@
-:root {
-  --background-color: #1e3c54;
-  --secondary-background-color: #005F85;
-  --accent-color: #f9df00;
-  --text-color: #fff;
-  --donate-button-text-color: black;
-  --primary-font-family: 'Albert Sans', sans-serif;
-  --secondary-font-family: 'EB Garamond', serif;
-  --tertiary-font-family: 'Sen', sans-serif;
-}
-
-body {
-  margin: 0;
-}
+/* Mission Row Styling */
+/* ------------------- */
 
 #mission {
     background-color: var(--background-color);
@@ -28,7 +16,6 @@ body {
 
 #mission p {
   font-family: var(--secondary-font-family);
-  /* font-size: 18px; */
   color: var(--text-color);
   margin: 0px;
   padding-top: 25px;
@@ -39,17 +26,17 @@ body {
 
 #mission ul {
   width: 60%;
-  margin: 0 auto; /* Center the ul block */
+  margin: 0 auto;
   padding: 0;
-  list-style-position: inside; /* Optional: keeps bullets aligned inside width */
-  text-align: left; /* or 'center' if you want the list text centered */
+  list-style-position: inside;
+  text-align: left;
   padding-bottom: 50px;
 }
 
 #mission li {
   text-indent: -20px;
   margin: 0px;
-  margin-bottom: 20px; /* Adds spacing between list items */
+  margin-bottom: 20px;
   font-family: var(--secondary-font-family);
   color: var(--text-color);
 }
@@ -61,6 +48,9 @@ body {
 #mission li strong {
   color: var(--accent-color);
 }
+
+/* Prevention and Outreach Row Styling */
+/* ----------------------------------- */
 
 #prevention-and-outreach {
   background-color: var(--secondary-background-color);
@@ -78,16 +68,12 @@ body {
   font-size: 18px;
   color: var(--accent-color);
   margin-top: 25px;
-  /* padding-bottom: 50px; */
 }
 
 #prevention-and-outreach p {
   font-family: var(--secondary-font-family);
-  /* font-size: 18px; */
   color: var(--text-color);
   margin: 0px;
-  /* padding-top: 25px; */
-  /* padding-bottom: 50px; */
   padding-left: calc(10%);
   padding-right: calc(10%);
 }
@@ -104,8 +90,6 @@ body {
 
 .prevention-icon .overlay {
   position: absolute;
-  /* right: -15px;
-  bottom: -10px; */
   color: #aee6f8;
 }
 
@@ -117,10 +101,11 @@ body {
 
 .outreach-icon .overlay {
   position: absolute;
-  /* right: -15px;
-  bottom: -10px; */
   color: #aee6f8;
 }
+
+/* Approach Row Styling */
+/* -------------------- */
 
 #approach {
   margin: 0 auto;
@@ -138,16 +123,13 @@ body {
   font-size: 18px;
   color: var(--accent-color);
   margin: 0px;
-  /* padding-bottom: 50px; */
 }
 
 #approach p {
   font-family: var(--secondary-font-family);
-  /* font-size: 18px; */
   color: var(--text-color);
   margin: 0px;
   padding-top: 25px;
-  /* padding-bottom: 50px; */
   padding-left: calc(10%);
   padding-right: calc(10%);
 }
@@ -173,8 +155,6 @@ body {
 
 .approach-icon .overlay {
   position: absolute;
-  /* right: -15px;
-  bottom: -10px; */
   color: #aee6f8;
 }
 
@@ -193,7 +173,6 @@ body {
   font-family: 'Georgia', serif;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .approach-grid {
     grid-template-columns: 1fr;
@@ -201,9 +180,11 @@ body {
   }
 }
 
+/* Who We Are Row Styling */
+/* ---------------------- */
+
 #who-we-are {
   background: #fff;
-  /* padding: 60px 0; */
 }
 
 #who-we-are .section-title {
@@ -265,11 +246,12 @@ body {
   padding-right: 50px;
 }
 
+/* Programs Row Styling */
+/* -------------------- */
+
 #programs {
     background-color: var(--secondary-background-color);
     text-align: center;
-    /* max-width: 1200px; */
-    /* margin: 0 auto; */
     text-align: center;
     padding-bottom: 50px;
 }
@@ -284,7 +266,6 @@ body {
 
 #programs p {
   font-family: var(--secondary-font-family);
-  /* font-size: 18px; */
   color: var(--text-color);
   margin: 0px;
   padding-top: 25px;
@@ -308,31 +289,27 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns by default */
+  grid-template-columns: repeat(2, 1fr);
   gap: 50px;
-  padding: 0 10%; /* Optional for nicer side spacing */
+  padding: 0 10%;
 }
 
 @media screen and (max-width: 1000px) {
   .grid {
-    grid-template-columns: 1fr; /* Switch to single column */
+    grid-template-columns: 1fr;
     padding: 0 5%;
   }
 }
+
+/* Read More Row Styling */
+/* --------------------- */
 
 .card {
   background-color: var(--background-color);
   border: 1px solid var(--accent-color);
   padding: 20px;
-  /* border-radius: 8px; */
   text-align: center;
 }
-
-/* .card-title {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: var(--text-color);
-} */
 
 .card-text {
   font-size: 1rem;
@@ -342,11 +319,10 @@ body {
 
 .read-more-button {
   margin-top: 20px;
-  background-color: #064057;
+  background-color: var(--background-color);
   color: var(--accent-color);
   font-weight: bold;
   font-size: 20px;
-  /* border: none; */
   padding: 12px 24px;
   border-radius: 50px;
   border-color: var(--accent-color);
@@ -372,8 +348,6 @@ body {
 
 #read-more-text-block h1 {
   font-family: var(--secondary-font-family);
-  /* font-size: 18px; */
   color: var(--accent-color);
   margin: 0px;
-  /* padding-top: 50px; */
 }
