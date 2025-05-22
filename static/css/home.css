@@ -1,0 +1,404 @@
+:root {
+  --background-color: #1e3c54;
+  --secondary-background-color: #005F85;
+  --accent-color: #f9df00;
+  --text-color: #fff;
+  --donate-button-text-color: black;
+  --primary-font-family: 'Albert Sans', sans-serif;
+  --secondary-font-family: 'EB Garamond', serif;
+  --tertiary-font-family: 'Sen', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#mission {
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+#mission h3 {
+  font-family: var(--primary-font-family);
+  font-size: 18px;
+  color: var(--accent-color);
+  margin: 0px;
+  padding-top: 50px;
+}
+
+#mission p {
+  font-family: var(--secondary-font-family);
+  /* font-size: 18px; */
+  color: var(--text-color);
+  margin: 0px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  padding-left: calc(10%);
+  padding-right: calc(10%);
+}
+
+#mission ul {
+  width: 60%;
+  margin: 0 auto; /* Center the ul block */
+  padding: 0;
+  list-style-position: inside; /* Optional: keeps bullets aligned inside width */
+  text-align: left; /* or 'center' if you want the list text centered */
+  padding-bottom: 50px;
+}
+
+#mission li {
+  text-indent: -20px;
+  margin: 0px;
+  margin-bottom: 20px; /* Adds spacing between list items */
+  font-family: var(--secondary-font-family);
+  color: var(--text-color);
+}
+
+#mission li::marker {
+  color: var(--accent-color)
+}
+
+#mission li strong {
+  color: var(--accent-color);
+}
+
+#prevention-and-outreach {
+  background-color: var(--secondary-background-color);
+  text-align: center;
+}
+
+#prevention-and-outreach svg {
+  height: 150px;
+  margin: 0px;
+  margin-top: 50px;
+}
+
+#prevention-and-outreach h3 {
+  font-family: var(--primary-font-family);
+  font-size: 18px;
+  color: var(--accent-color);
+  margin-top: 25px;
+  /* padding-bottom: 50px; */
+}
+
+#prevention-and-outreach p {
+  font-family: var(--secondary-font-family);
+  /* font-size: 18px; */
+  color: var(--text-color);
+  margin: 0px;
+  /* padding-top: 25px; */
+  /* padding-bottom: 50px; */
+  padding-left: calc(10%);
+  padding-right: calc(10%);
+}
+
+#outreach-text {
+  padding-bottom: 50px;
+}
+
+.prevention-icon {
+  position: relative;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.prevention-icon .overlay {
+  position: absolute;
+  /* right: -15px;
+  bottom: -10px; */
+  color: #aee6f8;
+}
+
+.outreach-icon {
+  position: relative;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.outreach-icon .overlay {
+  position: absolute;
+  /* right: -15px;
+  bottom: -10px; */
+  color: #aee6f8;
+}
+
+#approach {
+  margin: 0 auto;
+  padding: 50px 25px;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+#approach svg {
+  height: 150px;
+}
+
+#approach h3 {
+  font-family: var(--primary-font-family);
+  font-size: 18px;
+  color: var(--accent-color);
+  margin: 0px;
+  /* padding-bottom: 50px; */
+}
+
+#approach p {
+  font-family: var(--secondary-font-family);
+  /* font-size: 18px; */
+  color: var(--text-color);
+  margin: 0px;
+  padding-top: 25px;
+  /* padding-bottom: 50px; */
+  padding-left: calc(10%);
+  padding-right: calc(10%);
+}
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 40px;
+  justify-items: center;
+}
+
+.approach-card {
+  background: transparent;
+  padding: 0 10px;
+  max-width: 370px;
+}
+
+.approach-icon {
+  position: relative;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.approach-icon .overlay {
+  position: absolute;
+  /* right: -15px;
+  bottom: -10px; */
+  color: #aee6f8;
+}
+
+.approach-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+  color: #fff !important;
+}
+
+.approach-card p {
+  font-size: 1rem;
+  color: #e5f2ff;
+  line-height: 1.6;
+  font-family: 'Georgia', serif;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .approach-grid {
+    grid-template-columns: 1fr;
+    gap: 40px 0;
+  }
+}
+
+#who-we-are {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  text-align: center;
+  width: 100%;
+  font-family: var(--primary-font-family);
+  font-size: 18px;
+  color: var(--background-color);
+  margin: 0px;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-block h3 {
+  font-family: var(--primary-font-family);
+  font-size: 18px;
+  color: var(--background-color);
+  margin: 0px;
+  padding-top: 50px;
+}
+
+.text-block p {
+  /* font-size: 1rem; */
+  color: var(--donate-button-text-color);
+  /* line-height: 1.6; */
+  /* margin-bottom: 20px; */
+  font-family: var(--secondary-font-family);
+  /* font-size: 18px; */
+  /* color: var(--text-color); */
+  margin: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: calc(10%);
+  /* padding-right: calc(10%); */
+}
+ 
+.learn-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  border-color: var(--accent-color);
+  transform: translateX(calc(40% + 10px));
+}
+
+.team-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.team-image img {
+  max-width: 100%;
+  height: auto;
+  /* border-radius: 8px; */
+}
+
+/* Responsive layout for screens narrower than 800px */
+@media (max-width: 800px) {
+  #who-we-are {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .text-content, .team-image {
+    width: 100%;
+  }
+
+  .text-block h3 {
+    font-size: 1.5rem;
+  }
+}
+
+#programs {
+    background-color: var(--secondary-background-color);
+    text-align: center;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#programs h3 {
+  font-family: var(--primary-font-family);
+  font-size: 18px;
+  color: var(--accent-color);
+  margin: 0px;
+  padding-top: 50px;
+}
+
+#programs p {
+  font-family: var(--secondary-font-family);
+  /* font-size: 18px; */
+  color: var(--text-color);
+  margin: 0px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  padding-left: calc(10%);
+  padding-right: calc(10%);
+}
+
+#programs p strong {
+  color: var(--accent-color);
+}
+
+.card-img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  display: block;
+  padding-top: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns by default */
+  gap: 50px;
+  padding: 0 10%; /* Optional for nicer side spacing */
+}
+
+@media screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr; /* Switch to single column */
+    padding: 0 5%;
+  }
+}
+
+.card {
+  background-color: var(--background-color);
+  border: 1px solid var(--accent-color);
+  padding: 20px;
+  /* border-radius: 8px; */
+  text-align: center;
+}
+
+/* .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--text-color);
+} */
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.read-more-button {
+  margin-top: 20px;
+  background-color: #064057;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 20px;
+  /* border: none; */
+  padding: 12px 24px;
+  border-radius: 50px;
+  border-color: var(--accent-color);
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--primary-font-family);
+}
+
+#read-more {
+  margin: 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url('../images/PDX_cityscape.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 30vh;
+}
+
+#read-more-text-block {
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+#read-more-text-block h1 {
+  font-family: var(--secondary-font-family);
+  /* font-size: 18px; */
+  color: var(--accent-color);
+  margin: 0px;
+  /* padding-top: 50px; */
+}
