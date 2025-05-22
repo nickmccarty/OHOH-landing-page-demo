@@ -202,54 +202,45 @@ body {
 }
 
 #who-we-are {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px;
-  gap: 40px;
-  max-width: 1200px;
-  margin: auto;
-  flex-wrap: wrap;
+  background: #fff;
+  /* padding: 60px 0; */
 }
 
-.section-title {
+#who-we-are .section-title {
+  color: var(--background-color);
+  font-size: 18px;
+  font-family: var(--primary-font-family);
+  margin: 0px;
+  margin-top: 50px;
   text-align: center;
-  width: 100%;
-  font-family: var(--primary-font-family);
-  font-size: 18px;
-  color: var(--background-color);
-  margin: 0px;
 }
 
-.text-content {
-  flex: 1;
-  min-width: 300px;
-}
-
-.text-block h3 {
-  font-family: var(--primary-font-family);
-  font-size: 18px;
-  color: var(--background-color);
-  margin: 0px;
-  padding-top: 50px;
-}
-
-.text-block p {
-  /* font-size: 1rem; */
-  color: var(--donate-button-text-color);
-  /* line-height: 1.6; */
-  /* margin-bottom: 20px; */
-  font-family: var(--secondary-font-family);
-  /* font-size: 18px; */
-  /* color: var(--text-color); */
-  margin: 0px;
+#who-we-are-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 0 auto;
   padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+#who-we-are .text-block {
+  max-width: 420px;
+}
+
+#who-we-are .text-block p {
+  color: var(--donate-button-text-color);
+  font-family: var(--secondary-font-family);
+  line-height: 1.6;
+  margin: 0px;
   padding-bottom: 25px;
   padding-left: calc(10%);
-  /* padding-right: calc(10%); */
+
 }
- 
-.learn-more-button {
+
+.learn-more-button,
+#who-we-are a {
   display: inline-block;
   padding: 10px 20px;
   background-color: var(--background-color);
@@ -258,36 +249,19 @@ body {
   border-radius: 20px;
   font-weight: bold;
   border-color: var(--accent-color);
-  transform: translateX(calc(40% + 10px));
+  transform: translateX(calc(40%));
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
 }
 
-.team-image {
-  flex: 1;
-  min-width: 300px;
-  text-align: center;
+.learn-more-button:hover,
+#who-we-are a:hover {
+  background: #ffe97f;
+  color: #25405f;
 }
 
-.team-image img {
-  max-width: 100%;
-  height: auto;
-  /* border-radius: 8px; */
-}
-
-/* Responsive layout for screens narrower than 800px */
-@media (max-width: 800px) {
-  #who-we-are {
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .text-content, .team-image {
-    width: 100%;
-  }
-
-  .text-block h3 {
-    font-size: 1.5rem;
-  }
+#who-we-are .team-image img {
+  max-width: 500px;
 }
 
 #programs {
