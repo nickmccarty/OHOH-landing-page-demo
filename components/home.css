@@ -62,15 +62,75 @@ body {
   color: var(--accent-color);
 }
 
+#prevention-and-outreach {
+  background-color: var(--secondary-background-color);
+  text-align: center;
+}
+
+#prevention-and-outreach svg {
+  height: 150px;
+  margin: 0px;
+  margin-top: 50px;
+}
+
+#prevention-and-outreach h3 {
+  font-family: var(--primary-font-family);
+  font-size: 18px;
+  color: var(--accent-color);
+  margin-top: 25px;
+  /* padding-bottom: 50px; */
+}
+
+#prevention-and-outreach p {
+  font-family: var(--secondary-font-family);
+  /* font-size: 18px; */
+  color: var(--text-color);
+  margin: 0px;
+  /* padding-top: 25px; */
+  /* padding-bottom: 50px; */
+  padding-left: calc(10%);
+  padding-right: calc(10%);
+}
+
+#outreach-text {
+  padding-bottom: 50px;
+}
+
+.prevention-icon {
+  position: relative;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.prevention-icon .overlay {
+  position: absolute;
+  /* right: -15px;
+  bottom: -10px; */
+  color: #aee6f8;
+}
+
+.outreach-icon {
+  position: relative;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.outreach-icon .overlay {
+  position: absolute;
+  /* right: -15px;
+  bottom: -10px; */
+  color: #aee6f8;
+}
+
 #approach {
   margin: 0 auto;
   padding: 50px 25px;
   text-align: center;
-  background-color: var(--secondary-background-color);
+  background-color: var(--background-color);
 }
 
 #approach svg {
-  width: 150px;
+  height: 150px;
 }
 
 #approach h3 {
@@ -113,8 +173,8 @@ body {
 
 .approach-icon .overlay {
   position: absolute;
-  right: -15px;
-  bottom: -10px;
+  /* right: -15px;
+  bottom: -10px; */
   color: #aee6f8;
 }
 

@@ -36,7 +36,7 @@ document.querySelector('.message-form').addEventListener('submit', async functio
             to: 'nickmccarty0@gmail.com',
             // bcc: 'lukasgreen82@gmail.com',
             message: {
-                subject: `OHOH Contact Form: ${subject}`,
+                subject: `New Message for OHOH: ${subject}`,
                 html: `
                   <p><strong>Name:</strong> ${name}</p>
                   <p><strong>Email:</strong> ${email}</p>
