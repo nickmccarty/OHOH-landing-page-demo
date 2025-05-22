@@ -256,12 +256,13 @@ body {
 
 .learn-more-button:hover,
 #who-we-are a:hover {
-  background: #ffe97f;
-  color: #25405f;
+  background: var(--accent-color);
+  color: var(--background-color);
 }
 
 #who-we-are .team-image img {
   max-width: 500px;
+  padding-right: 50px;
 }
 
 #programs {
