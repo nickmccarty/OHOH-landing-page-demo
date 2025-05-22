@@ -2,3 +2,13 @@
     background-color: var(--background-color);
     height: 500px;
 }
+
+#vision-and-values {
+    background-color: #fff;
+    height: 1000px;
+}
+
+#our-team {
+    background-color: var(--secondary-background-color);
+    height: 1500px;
+}
