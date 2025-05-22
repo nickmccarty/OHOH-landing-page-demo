@@ -32,13 +32,13 @@ document.querySelector('.message-form').addEventListener('submit', async functio
         // Add to 'mail' collection for Firebase Email Trigger Extension
         await db.collection('mail').add({
             to: 'nickmccarty0@gmail.com',
-            bcc: 'lukasgreen82@gmail.com',
+            // bcc: 'lukasgreen82@gmail.com',
             message: {
                 subject: 'New OHOH Contact Form Submission',
                 html: `
                   <p><strong>Name:</strong> ${name}</p>
                   <p><strong>Email:</strong> ${email}</p>
-                  <p><strong>Message:</strong><br>${message}</p>
+                  <p><strong>Message:</strong><br><br>${message}</p>
                 `
             }
         });
