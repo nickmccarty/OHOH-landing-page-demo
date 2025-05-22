@@ -133,7 +133,7 @@
   color: var(--accent-color);
   font-size: 24px;
   margin-bottom: 20px;
-  color: var(--text-color);
+  color: var(--accent-color);
   padding-left: 8px;
 }
 
