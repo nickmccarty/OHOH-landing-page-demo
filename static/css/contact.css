@@ -13,6 +13,10 @@ body {
     text-align: center;
 }
 
+.contact-form ::placeholder {
+    font-family: var(--tertiary-font-family);
+}
+
 .contact-form h3 {
   font-family: var(--primary-font-family);
   font-size: 18px;

@@ -215,30 +215,29 @@
   font-family: var(--secondary-font-family);
   line-height: 1.6;
   margin: 0px;
-  padding-bottom: 25px;
   padding-left: calc(10%);
 
 }
 
 .learn-more-button,
 #who-we-are a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--background-color);
-  color: var(--accent-color);
-  text-decoration: none;
-  border-radius: 20px;
-  font-weight: bold;
-  border-color: var(--accent-color);
-  transform: translateX(calc(40%));
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+    margin-top: 1rem;
+    background-color: var(--secondary-background-color);
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid var(--accent-color);
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transform: translateX(calc(25%));
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .learn-more-button:hover,
 #who-we-are a:hover {
-  background: var(--accent-color);
-  color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 #who-we-are .team-image img {
@@ -318,17 +317,22 @@
 }
 
 .read-more-button {
-  margin-top: 20px;
-  background-color: var(--background-color);
-  color: var(--accent-color);
-  font-weight: bold;
-  font-size: 20px;
-  padding: 12px 24px;
-  border-radius: 50px;
-  border-color: var(--accent-color);
-  cursor: pointer;
-  display: inline-block;
-  font-family: var(--primary-font-family);
+    margin-top: 1rem;
+    background-color: var(--background-color);
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid var(--accent-color);
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.read-more-button:hover,
+#read-more a:hover {
+  background-color: var(--accent-color);
 }
 
 #read-more {
