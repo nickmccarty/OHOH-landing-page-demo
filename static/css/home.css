@@ -8,7 +8,7 @@
 
 #mission h3 {
   font-family: var(--primary-font-family);
-  font-size: 18px;
+  font-size: 48px;
   color: var(--accent-color);
   margin: 0px;
   padding-top: 50px;
@@ -16,6 +16,7 @@
 
 #mission p {
   font-family: var(--secondary-font-family);
+  font-size: 32px;
   color: var(--text-color);
   margin: 0px;
   padding-top: 25px;
@@ -34,10 +35,11 @@
 }
 
 #mission li {
-  text-indent: -20px;
+  text-indent: -40px;
   margin: 0px;
   margin-bottom: 20px;
   font-family: var(--secondary-font-family);
+  font-size: 28px;
   color: var(--text-color);
 }
 
@@ -65,13 +67,14 @@
 
 #prevention-and-outreach h3 {
   font-family: var(--primary-font-family);
-  font-size: 18px;
+  font-size: 48px;
   color: var(--accent-color);
   margin-top: 25px;
 }
 
 #prevention-and-outreach p {
   font-family: var(--secondary-font-family);
+  font-size: 28px;
   color: var(--text-color);
   margin: 0px;
   padding-left: calc(10%);
@@ -120,13 +123,14 @@
 
 #approach h3 {
   font-family: var(--primary-font-family);
-  font-size: 18px;
+  font-size: 48px;
   color: var(--accent-color);
   margin: 0px;
 }
 
 #approach p {
   font-family: var(--secondary-font-family);
+  font-size: 28px;
   color: var(--text-color);
   margin: 0px;
   padding-top: 25px;
@@ -159,7 +163,7 @@
 }
 
 .approach-card h3 {
-  font-size: 1.5rem;
+  font-size: 32px;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 14px;
@@ -167,7 +171,7 @@
 }
 
 .approach-card p {
-  font-size: 1rem;
+  font-size: 28px;
   color: #e5f2ff;
   line-height: 1.6;
   font-family: 'Georgia', serif;
@@ -189,7 +193,7 @@
 
 #who-we-are .section-title {
   color: var(--background-color);
-  font-size: 18px;
+  font-size: 48px;
   font-family: var(--primary-font-family);
   margin: 0px;
   margin-top: 50px;
@@ -214,10 +218,9 @@
 #who-we-are .text-block p {
   color: var(--donate-button-text-color);
   font-family: var(--secondary-font-family);
-  line-height: 1.6;
   margin: 0px;
   padding-left: calc(20%);
-  font-size: 1rem;
+  font-size: 28px;
 }
 
 .learn-more-button,
@@ -265,7 +268,7 @@
 
 #programs h3 {
   font-family: var(--primary-font-family);
-  font-size: 18px;
+  font-size: 48px;
   color: var(--accent-color);
   margin: 0px;
   padding-top: 50px;
@@ -273,6 +276,7 @@
 
 #programs p {
   font-family: var(--secondary-font-family);
+  font-size: 28px;
   color: var(--text-color);
   margin: 0px;
   padding-top: 25px;
@@ -360,6 +364,7 @@
 
 #read-more-text-block h1 {
   font-family: var(--secondary-font-family);
+  font-size: 42px;
   color: var(--accent-color);
   margin: 0px;
 }
