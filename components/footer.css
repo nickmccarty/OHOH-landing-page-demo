@@ -84,6 +84,10 @@
 
 .donate-button:hover {
     background-color: var(--secondary-background-color);
+    transition: transform 0.15s ease-in-out;
+    transform: scale(1.10);
+    border: 2px solid var(--accent-color);
+    color: var(--text-color);
 }
 
 .contact-section h1 {

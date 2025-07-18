@@ -10,6 +10,40 @@ body, html {
   padding: 0;
 }
 
+body.about .header {
+  background: url('../images/about-banner.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll; /* override 'fixed' */
+  height: auto; /* or whatever height you want */
+}
+
+body.about header {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  position: relative; /* was absolute/fixed on home, change to relative here */
+  top: auto;
+  left: auto;
+  width: 100%;
+  z-index: 100;
+}
+
+body.about nav {
+  display: block;
+}
+
+body.about nav svg {
+  display: block;
+  width: 100vw;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
 #about-us-section {
   display: flex;
   align-items: center;

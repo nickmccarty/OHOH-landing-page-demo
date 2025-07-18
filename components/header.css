@@ -22,7 +22,7 @@
 }
 
 header {
-  position: relative;
+  /* position: relative; */
   z-index: 2;
   display: flex;
   align-items: center;
@@ -62,7 +62,7 @@ nav a:hover {
 nav svg {
     width: 100%; /* Make the SVG take the full width of the nav */
     height: auto; /* Maintain aspect ratio */
-    padding-left: 50px;
+    /* padding-left: 50px; */
 }
 .social-icons {
   display: flex;

@@ -4,7 +4,6 @@ async function injectHTML(filePath, elem) {
     if (!response.ok) return;
     const text = await response.text();
     elem.innerHTML = text;
-
     // Re-inject any scripts in the injected HTML
     elem.querySelectorAll("script").forEach(script => {
       const newScript = document.createElement("script");
@@ -17,7 +16,18 @@ async function injectHTML(filePath, elem) {
         newScript.textContent = script.innerHTML;
       }
       // Replace the old script with the new one
-      script.parentNode.replaceChild(newScript, script);
+      // script.parentNode.replaceChild(newScript, script)
+      elem.querySelectorAll("script").forEach(script => {
+        const newScript = document.createElement("script");
+        Array.from(script.attributes).forEach(attr =>
+          newScript.setAttribute(attr.name, attr.value)
+        );
+        if (!script.src) {
+          const content = script.textContent.trim();
+          if (content) newScript.textContent = content;
+        }
+        script.parentNode.replaceChild(newScript, script);
+      });
     });
   } catch (err) {
     console.error(err.message);
