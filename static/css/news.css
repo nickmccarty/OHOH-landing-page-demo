@@ -11,7 +11,7 @@ body, html {
 }
 
 body.news .header {
-  background: url('../images/news-banner.png') no-repeat center center;
+  background: url('../images/news-banner.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: scroll; /* override 'fixed' */
   height: auto; /* or whatever height you want */
