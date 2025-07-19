@@ -2,7 +2,7 @@ body {
   background: var(--background-color);
   margin: 0;
   font-family: var(--secondary-font-family);
-  color: #fff;
+  color: var(--text-color);
 }
 
 body, html {
@@ -99,7 +99,7 @@ body.about nav svg {
 .about-us-text-col p {
   font-size: 1.07rem;
   line-height: 1.6;
-  color: #fff;
+  color: var(--text-color);
   margin-bottom: 18px;
 }
 
@@ -183,13 +183,162 @@ body.about nav svg {
   }
 }
 
-
 #vision-and-values {
-    background-color: #fff;
-    height: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--secondary-background-color);
+  text-align: center;
+  background-color: var(--text-color);
+}
+
+#vision-and-values h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#vision-and-values .mission {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#vision-and-values hr {
+  margin: 40px 0;
+}
+
+#vision-and-values .image-container {
+  text-align: center;
+}
+
+#vision-and-values .image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  #vision-and-values {
+    padding: 20px 15px;
+  }
+
+  #vision-and-values h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  #vision-and-values .mission {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  #vision-and-values hr {
+    margin: 30px 0;
+  }
 }
 
 #our-team {
-    background-color: var(--secondary-background-color);
-    height: 1500px;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--text-color);
+  background-color: var(--secondary-background-color); /* Adjust to your brand background blue */
+  text-align: center;
+}
+
+#our-team h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--hero-title-color); /* Golden accent color for section title */
+  margin-bottom: 20px;
+}
+
+#our-team .team-intro {
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  gap: 40px;
+  justify-items: center;
+}
+
+.team-member {
+  background-color: transparent;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.team-member h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffd700; /* Yellow for names */
+  margin: 10px 0 5px 0;
+}
+
+.team-member h3 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ffffff;
+  text-align: left;
+  padding: 0 10px;
+}
+
+/* Tablet adjustments */
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  #our-team {
+    padding: 40px 15px;
+  }
+
+  #our-team h1 {
+    font-size: 22px;
+  }
+
+  #our-team .team-intro {
+    font-size: 14px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr; /* single column on mobile */
+  }
+
+  .team-member h2 {
+    font-size: 16px;
+  }
+
+  .team-member h3 {
+    font-size: 12px;
+  }
+
+  .team-member p {
+    font-size: 13px;
+  }
 }
