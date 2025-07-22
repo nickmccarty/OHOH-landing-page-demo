@@ -1,43 +1,36 @@
+// inject.js
+
 async function injectHTML(filePath, elem) {
   try {
     const response = await fetch(filePath);
     if (!response.ok) return;
     const text = await response.text();
     elem.innerHTML = text;
-    // Re-inject any scripts in the injected HTML
+
+    // Re-inject any scripts inside the injected HTML
     elem.querySelectorAll("script").forEach(script => {
       const newScript = document.createElement("script");
-      // Copy all attributes (including src, type, etc.)
       Array.from(script.attributes).forEach(attr =>
         newScript.setAttribute(attr.name, attr.value)
       );
-      // For inline scripts, set .textContent instead of using createTextNode
       if (!script.src) {
-        newScript.textContent = script.innerHTML;
+        newScript.textContent = script.textContent.trim();
       }
-      // Replace the old script with the new one
-      // script.parentNode.replaceChild(newScript, script)
-      elem.querySelectorAll("script").forEach(script => {
-        const newScript = document.createElement("script");
-        Array.from(script.attributes).forEach(attr =>
-          newScript.setAttribute(attr.name, attr.value)
-        );
-        if (!script.src) {
-          const content = script.textContent.trim();
-          if (content) newScript.textContent = content;
-        }
-        script.parentNode.replaceChild(newScript, script);
-      });
+      script.parentNode.replaceChild(newScript, script);
     });
+
   } catch (err) {
-    console.error(err.message);
+    console.error("Injection error:", err.message);
   }
 }
 
-function injectAll() {
+async function injectAll() {
+  const injectPromises = [];
   document.querySelectorAll("div[include]").forEach(elem => {
-    injectHTML(elem.getAttribute("include"), elem);
+    injectPromises.push(injectHTML(elem.getAttribute("include"), elem));
   });
+  await Promise.all(injectPromises);
 }
 
-injectAll();
+// Expose a global promise to ensure other scripts can wait for injection completion
+window.injectPromise = injectAll();
