@@ -7,6 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const cardsDiv = document.getElementById("cards");
 
       data.forEach(partner => {
+        // Create anchor tag
+        const anchor = document.createElement("a");
+        anchor.href = partner.url;
+        anchor.target = "_blank"; // optional: opens in new tab
+        anchor.rel = "noopener noreferrer"; // security best practice
+
+        // Create card div
         const card = document.createElement("div");
         card.className = "partner-card";
 
@@ -18,7 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
           <p>${partner.text}</p>
         `;
 
-        cardsDiv.appendChild(card);
+        // Append card to anchor
+        anchor.appendChild(card);
+
+        // Append anchor to cardsDiv
+        cardsDiv.appendChild(anchor);
       });
     }
   });
