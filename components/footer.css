@@ -192,6 +192,18 @@
   color: var(--accent-color);
 }
 
+@media (max-width: 900px) {
+  .latest-posts {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .posts-container {
+    justify-content: center; /* center posts within their container */
+  }
+}
+
 .footer-bottom {
   width: 100%;
   text-align: center;
