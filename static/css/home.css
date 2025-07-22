@@ -111,6 +111,7 @@ nav a svg {
   border: none;
   font-size: 1em;
   font-weight: bold;
+  font-family: var(--primary-font-family);
   outline: none;
   cursor: pointer;
   margin-bottom: 30px;
@@ -145,21 +146,21 @@ nav a svg {
     text-align: center;
 }
 
-#mission h3 {
+#mission h1 {
   font-family: var(--primary-font-family);
-  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-size: 24px;
   color: var(--accent-color);
   margin: 0px;
-  padding-top: 50px;
+  padding: 25px;
 }
 
 #mission p {
   font-family: var(--secondary-font-family);
-  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-size: 16px;
   color: var(--text-color);
   margin: 0px;
-  padding-top: 25px;
-  padding-bottom: 50px;
+  /* padding-top: 25px; */
+  /* padding-bottom: 25px; */
   padding-left: calc(10%);
   padding-right: calc(10%);
 }
@@ -170,7 +171,7 @@ nav a svg {
   padding: 0;
   list-style-position: outside; /* ensure bullets hang outside */
   text-align: left;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   padding-left: 2em; /* creates space for bullets to hang */
 }
 
@@ -180,7 +181,7 @@ nav a svg {
   margin: 0px;
   margin-bottom: 20px;
   font-family: var(--secondary-font-family);
-  font-size: clamp(1.125rem, 2.5vw, 1.75rem);
+  font-size: 16px;
   color: var(--text-color);
 }
 
@@ -205,16 +206,16 @@ nav a svg {
   margin-top: 50px;
 }
 
-#prevention-and-outreach h3 {
+#prevention-and-outreach h2 {
   font-family: var(--primary-font-family);
-  font-size: 48px;
+  font-size: 16px;
   color: var(--accent-color);
   margin-top: 25px;
 }
 
 #prevention-and-outreach p {
   font-family: var(--secondary-font-family);
-  font-size: 28px;
+  font-size: 14px;
   color: var(--text-color);
   margin: 0px;
   padding-left: calc(10%);
@@ -222,7 +223,7 @@ nav a svg {
 }
 
 #outreach-text {
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 .prevention-icon {
@@ -251,7 +252,7 @@ nav a svg {
 
 #approach {
   margin: 0 auto;
-  padding: 50px 25px;
+  padding: 25px;
   text-align: center;
   background-color: var(--background-color);
 }
@@ -260,16 +261,16 @@ nav a svg {
   height: 150px;
 }
 
-#approach h3 {
+#approach h1 {
   font-family: var(--primary-font-family);
-  font-size: 48px;
+  font-size: 24px;
   color: var(--accent-color);
   margin: 0px;
 }
 
 #approach p {
   font-family: var(--secondary-font-family);
-  font-size: 28px;
+  font-size: 14px;
   color: var(--text-color);
   margin: 0px;
   padding-top: 25px;
@@ -301,19 +302,20 @@ nav a svg {
   color: #aee6f8;
 }
 
-.approach-card h3 {
-  font-size: 32px;
+.approach-card h2 {
+  font-size: 16px;
   font-weight: bold;
+  font-family: var(--primary-font-family);
   letter-spacing: 1px;
   margin-bottom: 14px;
   color: #fff !important;
 }
 
 .approach-card p {
-  font-size: 28px;
+  font-size: 14px;
   color: #e5f2ff;
   line-height: 1.6;
-  font-family: 'Georgia', serif;
+  font-family: var(--secondary-font-family);
 }
 
 @media (max-width: 900px) {
@@ -323,18 +325,16 @@ nav a svg {
   }
 }
 
-/* Who We Are Row Styling */
-
+/* Who We Are Section */
 #who-we-are {
   background: #fff;
 }
 
 #who-we-are .section-title {
   color: var(--background-color);
-  font-size: 48px;
+  font-size: 24px;
   font-family: var(--primary-font-family);
-  margin: 0px;
-  margin-top: 50px;
+  margin: 25px;
   text-align: center;
 }
 
@@ -344,32 +344,33 @@ nav a svg {
   align-items: flex-start;
   gap: 20px;
   margin: 0 auto;
-  padding-top: 25px;
-  padding-bottom: 50px;
+  padding: 25px;
+  max-width: 1200px;
 }
 
 #who-we-are .text-block {
   max-width: 420px;
-  padding-left: 50px;
+  padding-left: 50px; /* left padding for consistent alignment */
 }
 
 #who-we-are .text-block p {
   color: var(--donate-button-text-color);
   font-family: var(--secondary-font-family);
-  margin: 0px;
-  padding-left: calc(20%);
-  font-size: 28px;
+  margin: 0;
+  padding-top: 0;
+  padding-left: 0; /* remove unnecessary inner padding */
+  font-size: 14px;
 }
 
-/* Container centering example – adjust your HTML accordingly */
+/* Button Container */
 .button-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* left-align on large screens */
 }
 
 /* Learn More Button Styling */
 .learn-more-button {
-  display: inline-block; /* ensures transform works predictably */
+  display: inline-block;
   margin-top: 1rem;
   background-color: var(--secondary-background-color);
   color: #fff;
@@ -379,10 +380,9 @@ nav a svg {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: bold;
+  font-family: var(--primary-font-family);
   cursor: pointer;
-  transform-origin: center;
-  transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out;
-  transform: translateX(calc(0% + -40px));
+  transition: background-color 0.15s ease-in-out, border 0.15s ease-in-out;
 }
 
 /* Hover Effect */
@@ -392,41 +392,61 @@ nav a svg {
   border: 2px solid var(--background-color);
 }
 
+/* Image styling */
 #who-we-are .team-image img {
   max-width: 500px;
   padding-right: 100px;
 }
 
 @media (max-width: 1100px) {
+  /* Stack and center all content */
   #who-we-are-content {
     flex-direction: column;
-    align-items: center; /* center items when stacked */
-    padding: 20px; /* reduce excessive top/bottom padding on mobile */
-    gap: 30px; /* increase vertical spacing between text and image if needed */
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90vw;
   }
 
+  /* Make text-content take full width and center children */
+  #who-we-are .text-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* center text-block inside */
+  }
+
+  /* Text block fills container and centers text */
   #who-we-are .text-block {
-    padding-left: 0; /* remove unnecessary left padding on mobile */
-    max-width: 90%; /* allow text to take more width fluidly */
+    max-width: 90%;
+    padding-left: 0;
+    text-align: center;
   }
 
   #who-we-are .text-block p {
-    padding-left: 0; /* remove calc(20%) left padding for cleaner mobile view */
-    font-size: 20px; /* reduce font size slightly for better readability */
-    text-align: center; /* optional: center align text on mobile */
+    padding-left: 0;
   }
 
-  #who-we-are .section-title {
-    font-size: 36px; /* reduce heading size for smaller screens */
-  }
-
+  /* Center the button container and button */
   .button-container {
-    text-align: center; /* ensure button is centered under text */
+    justify-content: center;
+    width: 100%;
   }
 
-  .team-image img {
+  .learn-more-button {
+    display: block;
+    margin: 1rem auto 0;
+  }
+
+  /* Center and scale image */
+  #who-we-are .team-image img {
     width: 90%;
-    height: auto; /* ensure image scales properly */
+    height: auto;
+    padding-right: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-
