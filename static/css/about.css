@@ -55,17 +55,17 @@ body.about nav svg {
   background: none;
   max-width: 1200px;
   width: 100%;
-  padding: 50px 100px;
+  padding: 20px;
   margin: 0 auto;
 }
 
 .about-us-title {
   text-align: center;
   font-family: var(--primary-font-family);
-  font-size: 48px;
+  font-size: 24px;
   color: var(--accent-color);
   margin: 0px;
-  padding-bottom: 25px;
+  padding: 20px;
 }
 
 .about-us-content {
@@ -152,48 +152,72 @@ body.about nav svg {
     flex-direction: column;
     align-items: center;
     gap: 0;
+    text-align: center; /* centers inline content */
   }
+
   .about-us-image-col,
   .about-us-text-col {
     width: 100%;
     min-width: 0;
   }
+
+  .about-us-image-col {
+    display: flex;
+    justify-content: center; /* centers the image horizontally */
+    align-items: center;
+  }
+
   .about-us-image {
     max-width: 90vw;
     margin-bottom: 24px;
   }
+
+  .about-us-text-col {
+    text-align: center; /* centers paragraph content within the column */
+  }
+
+  .about-us-text-col p {
+    text-align: center; /* ensures individual paragraphs are centered */
+  }
+
   .about-us-quote-row {
     flex-direction: column;
     gap: 0;
-    align-items: flex-start;
+    align-items: center; /* changed from flex-start to center */
+    text-align: center; /* centers blockquote text on small screens */
   }
+
   .about-us-quote-image {
     width: 100%;
     max-width: 90vw;
     margin-bottom: 16px;
   }
+
   .about-us-quote-block blockquote {
     font-size: 1rem;
   }
+
   .about-us-title {
     font-size: 2rem;
   }
+
   .about-us-container {
     padding: 0 8px;
   }
 }
 
+
 #vision-and-values {
   margin: 0 auto;
-  padding: 40px 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 20px 20px;
+  font-family: var(--primary-font-family);
   color: var(--secondary-background-color);
   text-align: center;
   background-color: var(--text-color);
 }
 
 #vision-and-values h1 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 30px;
 }
@@ -226,7 +250,7 @@ body.about nav svg {
   }
 
   #vision-and-values h1 {
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 20px;
   }
 
@@ -243,18 +267,19 @@ body.about nav svg {
 #our-team {
   /* max-width: 1200px; */
   margin: 0 auto;
-  padding: 60px 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 20px 20px;
+  font-family: var(--secondary-font-family);
   color: var(--text-color);
   background-color: var(--secondary-background-color); /* Adjust to your brand background blue */
   text-align: center;
 }
 
 #our-team h1 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
-  color: var(--hero-title-color); /* Golden accent color for section title */
+  color: var(--accent-color); /* Golden accent color for section title */
   margin-bottom: 20px;
+  font-family: var(--primary-font-family);
 }
 
 #our-team .team-intro {
@@ -262,6 +287,7 @@ body.about nav svg {
   max-width: 800px;
   margin: 0 auto 50px auto;
   line-height: 1.6;
+  font-family: var(--primary-font-family);
 }
 
 .team-grid {
@@ -286,21 +312,24 @@ body.about nav svg {
 .team-member h2 {
   font-size: 18px;
   font-weight: bold;
-  color: #ffd700; /* Yellow for names */
+  font-family: var(--primary-font-family);
+  color: var(--accent-color); /* Yellow for names */
   margin: 10px 0 5px 0;
 }
 
 .team-member h3 {
   font-size: 14px;
   font-weight: normal;
-  color: #ffffff;
+  font-family: var(--primary-font-family);
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 
 .team-member p {
   font-size: 14px;
+  font-family: var(--primary-font-family);
   line-height: 1.6;
-  color: #ffffff;
+  color: var(--text-color);
   text-align: left;
   padding: 0 10px;
 }
@@ -315,11 +344,11 @@ body.about nav svg {
 /* Mobile adjustments */
 @media (max-width: 600px) {
   #our-team {
-    padding: 40px 15px;
+    padding: 20px 15px;
   }
 
   #our-team h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   #our-team .team-intro {
