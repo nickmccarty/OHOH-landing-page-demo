@@ -44,6 +44,24 @@ body.partners nav svg {
   margin: 0;
 }
 
+#section-header-and-text {
+   /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 20px 20px;
+  font-family: var(--secondary-font-family);
+  color: var(--text-color);
+  background-color: var(--secondary-background-color); /* Adjust to your brand background blue */
+  text-align: center;
+}
+
+#section-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--accent-color); /* Golden accent color for section title */
+  margin-bottom: 20px;
+  font-family: var(--primary-font-family);
+}
+
 #cards {
     background-color: var(--secondary-background-color);
 }
