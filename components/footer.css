@@ -40,7 +40,7 @@
 @media (max-width: 900px) {
   .footer {
     flex-direction: column;
-    padding: 30px 20px;
+    padding: 10px;
     gap: 20px; /* ← This was missing the unit "px" */
     align-items: center; /* Center columns themselves if needed */
   }

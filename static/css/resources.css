@@ -78,7 +78,7 @@ body.resources nav svg {
 p {
 font-family: var(--secondary-font-family);
 font-size: 16pt;
-color: var(--hero-title-color);
+/* color: var(--hero-title-color); */
 margin: 0.25rem 0 0.75rem 0;
 }
 
