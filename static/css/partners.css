@@ -13,8 +13,8 @@ body, html {
 body.partners .header {
   background: url('../images/partners-banner.png') no-repeat center center;
   background-size: cover;
-  background-attachment: scroll; /* override 'fixed' */
-  height: auto; /* or whatever height you want */
+  background-attachment: scroll;
+  height: auto;
 }
 
 body.partners header {
@@ -25,7 +25,7 @@ body.partners header {
   justify-content: flex-start;
   padding: 0;
   margin: 0;
-  position: relative; /* was absolute/fixed on home, change to relative here */
+  position: relative;
   top: auto;
   left: auto;
   width: 100%;
@@ -45,29 +45,25 @@ body.partners nav svg {
 }
 
 #section-header-and-text {
-   /* max-width: 1200px; */
-  width: 60%; 
+  width: 60%;
   margin: 0 auto;
   padding: 20px 20px;
   font-family: var(--secondary-font-family);
   color: var(--text-color);
-  background-color: var(--secondary-background-color); /* Adjust to your brand background blue */
+  background-color: var(--secondary-background-color);
   text-align: center;
 }
 
 #section-header {
   font-size: 24px;
   font-weight: bold;
-  color: var(--accent-color); /* Golden accent color for section title */
+  color: var(--accent-color);
   margin-bottom: 20px;
   font-family: var(--primary-font-family);
 }
 
 #cards {
-    background-color: var(--secondary-background-color);
-}
-
-#cards {
+  background-color: var(--secondary-background-color);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
@@ -75,7 +71,7 @@ body.partners nav svg {
 }
 
 .partner-card {
-  background-color: var(--background-color); /* match your site theme */
+  background-color: var(--background-color);
   color: var(--text-color);
   border-radius: 0px;
   padding: 1.5rem;
@@ -84,6 +80,12 @@ body.partners nav svg {
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid var(--accent-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .partner-logo img {
@@ -94,7 +96,7 @@ body.partners nav svg {
 .partner-card h3 {
   margin: 0.5rem 0;
   font-size: 1.25rem;
-  color: var(--accent-color); /* example highlight color */
+  color: var(--accent-color);
 }
 
 .partner-card p {
@@ -112,8 +114,6 @@ body.partners nav svg {
 .learn-more:hover {
   text-decoration: underline;
 }
-
-/* Responsive adjustments if needed */
 
 @media (max-width: 768px) {
   #cards {
