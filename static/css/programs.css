@@ -14,7 +14,7 @@ body.programs .header {
   background: url('../images/programs-banner.png') no-repeat center center;
   background-size: cover;
   background-attachment: scroll; /* override 'fixed' */
-  height: auto; /* or whatever height you want */
+  height: 5em; /* or whatever height you want */
 }
 
 body.programs header {
@@ -23,13 +23,18 @@ body.programs header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 0;
   margin: 0;
   position: relative; /* was absolute/fixed on home, change to relative here */
   top: auto;
   left: auto;
   width: 100%;
   z-index: 100;
+}
+
+body.programs header svg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 body.programs nav {
