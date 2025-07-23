@@ -247,3 +247,14 @@
   padding-top: 85px;
   width: 60%;
 }
+
+.social-icons svg g {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.social-icons a:hover g {
+  transform: scale(1.025);
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+}
