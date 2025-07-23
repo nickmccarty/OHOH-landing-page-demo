@@ -90,6 +90,7 @@ body.about nav svg {
 .about-us-text-col {
   flex: 1 1 0;
   margin-top: 0px;
+  font-size: 14px;
 }
 
 .about-us-text-col p:first-child {
@@ -368,6 +369,6 @@ body.about nav svg {
   }
 
   .team-member p {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
