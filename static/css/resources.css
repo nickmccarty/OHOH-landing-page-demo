@@ -14,7 +14,7 @@ body.resources .header {
   background: url('../images/resources-banner.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: scroll; /* override 'fixed' */
-  height: 5em; /* or whatever height you want */
+  height: auto; /* or whatever height you want */
 }
 
 body.resources header {
@@ -23,18 +23,13 @@ body.resources header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding: 0;
   margin: 0;
   position: relative; /* was absolute/fixed on home, change to relative here */
   top: auto;
   left: auto;
   width: 100%;
   z-index: 100;
-}
-
-body.resources header svg {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 body.resources nav {
