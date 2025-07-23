@@ -1,5 +1,5 @@
 body {
-  background: var(--background-color);
+  background: var(--secondary-background-color);
   margin: 0;
   font-family: var(--secondary-font-family);
   color: var(--text-color);
@@ -46,6 +46,7 @@ body.partners nav svg {
 
 #section-header-and-text {
    /* max-width: 1200px; */
+  width: 60%; 
   margin: 0 auto;
   padding: 20px 20px;
   font-family: var(--secondary-font-family);

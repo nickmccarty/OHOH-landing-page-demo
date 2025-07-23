@@ -48,13 +48,31 @@ main {
   background-color: var(--secondary-background-color)
 }
 
+#section-header-and-text {
+   /* max-width: 1200px; */
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px 20px;
+  font-family: var(--secondary-font-family);
+  color: var(--text-color);
+  background-color: var(--secondary-background-color); /* Adjust to your brand background blue */
+  text-align: center;
+}
+
+#section-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--accent-color); /* Golden accent color for section title */
+  margin-bottom: 20px;
+  font-family: var(--primary-font-family);
+}
+
 .program-section {
   border-top: 1px solid var(--accent-color);
-  padding: 40px 20px;
+  padding: 25px;
   width: 60%;
   margin: 0 auto;
 }
-
 
 .program-section.first {
   border-top: none; /* removes yellow line above first section */
@@ -83,6 +101,10 @@ main {
 .text-block {
   flex: 1;
   margin: 10px;
+}
+
+.text-block h2 {
+  font-family: var(--primary-font-family);
 }
 
 h2 {
