@@ -225,11 +225,20 @@ body.about nav svg {
   margin-bottom: 30px;
 }
 
+#vision-and-values p {
+  width: 60%;
+  margin: 0 auto 18px auto; /* center horizontally with auto margins */
+  font-size: 1.07rem;
+  line-height: 1.6;
+  color: var(--secondary-background-color); /* ensuring text remains visible on dark bg */
+}
+
 #vision-and-values .mission {
   text-align: left;
   font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
+  width: 60%;
 }
 
 #vision-and-values hr {
@@ -257,7 +266,9 @@ body.about nav svg {
     margin-bottom: 20px;
   }
 
+  #vision-and-values p,
   #vision-and-values .mission {
+    width: 100%; /* full width on small screens */
     font-size: 14px;
     line-height: 1.5;
   }
@@ -266,6 +277,7 @@ body.about nav svg {
     margin: 30px 0;
   }
 }
+
 
 #our-team {
   /* max-width: 1200px; */
