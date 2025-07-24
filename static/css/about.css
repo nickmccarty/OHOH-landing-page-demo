@@ -105,10 +105,10 @@ body.about nav svg {
   margin-bottom: 18px;
 }
 
-.about-us-text-col a {
+/* .about-us-text-col a {
   color: var(--accent-color);
   text-decoration: underline;
-}
+} */
 
 .about-us-text-col hr {
   border: none;
@@ -374,4 +374,13 @@ body.about nav svg {
   .team-member p {
     font-size: 14px;
   }
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* or any decoration you prefer on hover */
 }
