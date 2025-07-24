@@ -34,7 +34,7 @@ function footerInit() {
           <div class="post-caption">${post.caption}</div>
           <hr id="post-hr">
           <div class="social-icons">
-            <a href="#" aria-label="Facebook">
+            <a href="${post.fb_url}" aria-label="Facebook">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="24" viewBox="0 0 12 24" fill="none">
                 <g clip-path="url(#clip0_1063_1014)">
                   <g>
@@ -43,7 +43,7 @@ function footerInit() {
                 </g>
               </svg>
             </a>
-            <a href="#" aria-label="Instagram">
+            <a href="${post.fb_url}" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <g clip-path="url(#clip0_1063_999)">
                   <g>
@@ -54,14 +54,14 @@ function footerInit() {
                 </g>
               </svg>
             </a>
-            <a href="#" aria-label="YouTube">
+            <a href="${post.fb_url}" aria-label="YouTube">
               <svg xmlns="http://www.w3.org/2000/svg" width="34" height="26" viewBox="0 0 34 26" fill="none">
                 <g>
                   <path d="M26.9382 0.911133H7.0618C3.162 0.911133 0 4.08837 0 8.00697V17.9931C0 21.9117 3.162 25.0889 7.0618 25.0889H26.9382C30.838 25.0889 34 21.9117 34 17.9931V8.00697C34 4.08837 30.838 0.911133 26.9382 0.911133ZM22.1646 13.4834L12.869 17.9384C12.6208 18.058 12.3352 17.8769 12.3352 17.6002V8.41011C12.3352 8.12996 12.6276 7.94889 12.8758 8.0753L22.1714 12.8104C22.4468 12.9505 22.4434 13.3502 22.1646 13.4834Z" fill="#FFE500"/>
                 </g>
               </svg>
             </a>
-            <a href="#" aria-label="X">
+            <a href="${post.fb_url}" aria-label="X">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <g>
                   <path d="M14.2848 10.1631L23.2224 0H21.1056L13.344 8.82254L7.1472 0H0L9.3696 13.3429L0 24H2.1168L10.308 14.6811L16.8528 24H24M2.88 1.56115H6.132L21.1032 22.5156H17.8512" fill="#FFE500"/>
