@@ -160,8 +160,14 @@
   height: auto;
   display: block;
   border: 1px solid var(--accent-color);
-  /* border-radius: 4px; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.post img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
 
 .post-caption {
   margin: 10px 0;
