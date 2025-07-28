@@ -57,6 +57,19 @@ nav a svg {
   width: auto; /* maintain aspect ratio */
 }
 
+svg a g,
+svg a path {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+svg a:hover g,
+svg a:hover path {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+}
+
 /* Hero Content Styling */
 
 .hero {

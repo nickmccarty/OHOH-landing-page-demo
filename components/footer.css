@@ -83,10 +83,7 @@
 }
 
 .donate-button:hover {
-    background-color: var(--secondary-background-color);
-    transition: transform 0.15s ease-in-out;
-    transform: scale(1.10);
-    border: 2px solid var(--accent-color);
+    background-color: var(--hero-title-color);
     color: var(--text-color);
 }
 
@@ -263,4 +260,9 @@
 .social-icons a:hover g {
   transform: scale(1.025);
   filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--accent-color)
 }
