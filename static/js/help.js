@@ -1,5 +1,4 @@
-// help.js
-// This file is intentionally left blank.
+// help.js - Runs JS for the I need cards at the top of the Resources section
 // static/js/help.js
 
 document.addEventListener('DOMContentLoaded', () => {
